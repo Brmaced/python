@@ -1,7 +1,6 @@
 import os
 import tempfile
 import pandas as pd
-import pytesseract
 from PIL import Image
 import docx
 import streamlit as st
@@ -127,3 +126,4 @@ if run_button and file_input and openaikey and prompt:
             result = qa(temp_file_path, file_input.type, prompt, select_chain_type, select_k)
             # Exibir o resultado
             display_result(result)
+
