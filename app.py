@@ -15,7 +15,7 @@ from openai import AuthenticationError
 import requests.exceptions
 
 # Adicionar a imagem no cabeçalho
-image_url = "https://cienciadosdados.com/images/CINCIA_DOS_DADOS_4.png"
+image_url = ""
 st.image(image_url, use_column_width=True)
 
 # Adicionar o nome do aplicativo
@@ -126,4 +126,5 @@ if run_button and file_input and openaikey and prompt:
             result = qa(temp_file_path, file_input.type, prompt, select_chain_type, select_k)
             # Exibir o resultado
             display_result(result)
+
 
